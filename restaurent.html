@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey and Hazel - Snacks Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d1b38b; /* Darker hazelnut brown */
+            color: #000000; /* Black text for better readability */
+        }
+        header {
+            background-color: #5e432e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        .menu-section {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 800px;
+            background-color: #f8efe8;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-section h2 {
+            color: #5e432e;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .menu-item {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #ffffff; /* White background for contrast */
+            border-radius: 8px;
+            color: #000000; /* Black text */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item span {
+            font-weight: bold;
+        }
+        button {
+            background-color: #5e432e;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        button:hover {
+            background-color: #704e35;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Honey and Hazel</h1>
+    <p>Snacks Menu</p>
+</header>
+
+<section class="menu-section">
+    <h2>Our Snacks Menu</h2>
+    <div class="menu-item">
+        <span>Croissants (plain, almond, or chocolate)</span>
+        <p>10 SAR</p>
+    </div>
+    <div class="menu-item">
+        <span>Danish Pastries</span>
+        <p>12 SAR</p>
+    </div>
+    <div class="menu-item">
+        <span>Muffins (Blueberry, Chocolate Chip, etc.)</span>
+        <p>11 SAR</p>
+    </div>
+    <div class="menu-item">
+        <span>Chocolate Chip Cookies</span>
+        <p>6 SAR per piece</p>
+    </div>
+    <div class="menu-item">
+        <span>Biscotti</span>
+        <p>7 SAR per piece</p>
+    </div>
+    <div class="menu-item">
+        <span>Brownies</span>
+        <p>14 SAR per piece</p>
+    </div>
+    <button onclick="playAll()">Listen to the Full Menu</button>
+</section>
+
+<script>
+    const snacks = [
+        "Croissants (plain, almond, or chocolate), 10 SAR.",
+        "Danish Pastries, 12 SAR.",
+        "Muffins (Blueberry, Chocolate Chip, etc.), 11 SAR.",
+        "Chocolate Chip Cookies, 6 SAR per piece.",
+        "Biscotti, 7 SAR per piece.",
+        "Brownies, 14 SAR per piece."
+    ];
+
+    function playAll() {
+        const synth = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(snacks.join(" "));
+        synth.speak(utterance);
+    }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey and Hazel - Coffee Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d1b38b; /* Darker hazelnut brown */
+            color: #000000; /* Black text for better readability */
+        }
+        header {
+            background-color: #5e432e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        .menu-section {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 800px;
+            background-color: #f8efe8;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-section h2 {
+            color: #5e432e;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .menu-item {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #ffffff; /* White background for contrast */
+            border-radius: 8px;
+            color: #000000; /* Black text */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item span {
+            font-weight: bold;
+        }
+        button {
+            background-color: #5e432e;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        button:hover {
+            background-color: #704e35;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Honey and Hazel</h1>
+    <p>Coffee Menu</p>
+</header>
+
+<section class="menu-section">
+    <h2>Our Coffee Menu</h2>
+    <div class="menu-item">
+        <span>Espresso</span>
+        <p>9 SAR - A strong shot of pure coffee.</p>
+    </div>
+    <div class="menu-item">
+        <span>Americano</span>
+        <p>10 SAR - Espresso diluted with hot water.</p>
+    </div>
+    <div class="menu-item">
+        <span>Cappuccino</span>
+        <p>12 SAR - Espresso with steamed milk and a layer of foam.</p>
+    </div>
+    <div class="menu-item">
+        <span>Latte</span>
+        <p>13 SAR - Espresso with more steamed milk and light foam.</p>
+    </div>
+    <div class="menu-item">
+        <span>Macchiato</span>
+        <p>11 SAR - Espresso "stained" with a small amount of foam or milk.</p>
+    </div>
+    <div class="menu-item">
+        <span>Mocha</span>
+        <p>15 SAR - Espresso, chocolate, and steamed milk topped with whipped cream.</p>
+    </div>
+    <div class="menu-item">
+        <span>Cold Brew</span>
+        <p>14 SAR - Coffee brewed cold for a smoother taste.</p>
+    </div>
+    <div class="menu-item">
+        <span>Iced Coffee</span>
+        <p>12 SAR - Regular coffee served over ice.</p>
+    </div>
+    <div class="menu-item">
+        <span>Frappuccino</span>
+        <p>18 SAR - Blended iced coffee with flavors (e.g., caramel, mocha).</p>
+    </div>
+    <div class="menu-item">
+        <span>Flat White</span>
+        <p>13 SAR - Similar to a latte but with microfoam for a smoother texture.</p>
+    </div>
+    <button onclick="playAll()">Listen to the Full Menu</button>
+</section>
+
+<script>
+    const coffees = [
+        "Espresso, 9 SAR, A strong shot of pure coffee.",
+        "Americano, 10 SAR, Espresso diluted with hot water.",
+        "Cappuccino, 12 SAR, Espresso with steamed milk and a layer of foam.",
+        "Latte, 13 SAR, Espresso with more steamed milk and light foam.",
+        "Macchiato, 11 SAR, Espresso stained with a small amount of foam or milk.",
+        "Mocha, 15 SAR, Espresso, chocolate, and steamed milk topped with whipped cream.",
+        "Cold Brew, 14 SAR, Coffee brewed cold for a smoother taste.",
+        "Iced Coffee, 12 SAR, Regular coffee served over ice.",
+        "Frappuccino, 18 SAR, Blended iced coffee with flavors such as caramel or mocha.",
+        "Flat White, 13 SAR, Similar to a latte but with microfoam for a smoother texture."
+    ];
+
+    function playAll() {
+        const synth = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(coffees
+
